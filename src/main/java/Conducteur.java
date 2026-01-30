@@ -1,14 +1,14 @@
 public class Conducteur {
     private String name;
-    private int age;
+    private int years;
 
     public Conducteur(String name, int years) {
         this.name = name;
-        this.age = years;
+        this.years = years;
     }
 
     public boolean estAdulte() {
-        return age >= 18;
+        return years >= 18;
     }
 
     public void demarrerVoiture(Voiture voiture) {
