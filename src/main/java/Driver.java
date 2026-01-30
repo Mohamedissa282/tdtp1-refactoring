@@ -45,7 +45,7 @@ public class Driver {
      * Arrête la voiture spécifiée
      * @param voiture
      */
-    public void reachSpeed(Car voiture) {
+    public void stopCar(Car voiture) {
         System.out.println(name + " arrête la voiture.");
     }
 
@@ -57,6 +57,6 @@ public class Driver {
      */
     public void changeSpeed(Car voiture, int nouvelleVitesse) {
         System.out.println(name + " change la vitesse de la voiture à " + nouvelleVitesse);
-        voiture.atteindreVitesse(nouvelleVitesse);
+        voiture.reachSpeed(nouvelleVitesse);
     }
 }

@@ -64,7 +64,7 @@ public class Car {
         }
     }
     /**
-     * fonctionne accelerer
+     * fonction accelerer
      */
     public void accelerate() {
         if (speed + PAS_VITESSE <= MAX_SPEED) {
@@ -77,7 +77,7 @@ public class Car {
     }
 
     /**
-     * fonctionne pour afficher les details
+     * fonction pour afficher les details
      */
     private void displayDetails() {
         System.out.println("Modèle : " + model);

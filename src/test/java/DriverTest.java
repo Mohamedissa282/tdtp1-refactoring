@@ -24,9 +24,9 @@ public class DriverTest {
     }
 
     @Test
-    public void testReachSpeed() {
+    public void testStopCar() {
         Car voiture = new Car("Sedan", "Bleu");
-        driver.reachSpeed(voiture);
+        driver.stopCar(voiture);
         // How to assert that the arreterVoiture method was called?
     }
 

@@ -8,7 +8,7 @@ public class Application {
         moi.changeSpeed(maVoiture, 80);
         maVoiture.slowDown();
         moi.changeSpeed(maVoiture,30);
-        moi.reachSpeed(maVoiture);
+        moi.stopCar(maVoiture);
         System.out.println("fini");
     }
 }
