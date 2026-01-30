@@ -1,9 +1,9 @@
 public class Conducteur {
-    private String nom;
+    private String name;
     private int age;
 
     public Conducteur(String name, int years) {
-        this.nom = name;
+        this.name = name;
         this.age = years;
     }
 
@@ -13,18 +13,18 @@ public class Conducteur {
 
     public void demarrerVoiture(Voiture voiture) {
         if (estAdulte()) {
-            System.out.println(nom + " démarre la voiture.");
+            System.out.println(name + " démarre la voiture.");
         } else {
             System.out.println("Le conducteur n'est pas assez âgé pour conduire.");
         }
     }
 
     public void arreterVoiture(Voiture voiture) {
-        System.out.println(nom + " arrête la voiture.");
+        System.out.println(name + " arrête la voiture.");
     }
 
     public void changerVitesse(Voiture voiture, int nouvelleVitesse) {
-        System.out.println(nom + " change la vitesse de la voiture à " + nouvelleVitesse);
+        System.out.println(name + " change la vitesse de la voiture à " + nouvelleVitesse);
         int vitesseActuelle;
         if (voiture.getVitesse() >= nouvelleVitesse) {
             while (voiture.getVitesse() > nouvelleVitesse) {
