@@ -1,11 +1,11 @@
 public class Voiture {
     private String modele;
-    private String couleur;
+    private String color;
     private int vitesse;
 
     public Voiture(String model, String color) {
         this.modele = model;
-        this.couleur = color;
+        this.color = color;
         this.vitesse = 0;
     }
 
@@ -25,7 +25,7 @@ public class Voiture {
 
     private void afficheDetails() {
         System.out.println("Modèle : " + modele);
-        System.out.println("Couleur : " + couleur);
+        System.out.println("Couleur : " + color);
         System.out.println("Vitesse actuelle : " + vitesse);
     }
 
