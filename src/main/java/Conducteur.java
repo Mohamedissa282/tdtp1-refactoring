@@ -25,7 +25,6 @@ public class Conducteur {
 
     public void changerVitesse(Voiture voiture, int nouvelleVitesse) {
         System.out.println(name + " change la vitesse de la voiture à " + nouvelleVitesse);
-        int vitesseActuelle;
         if (voiture.getVitesse() >= nouvelleVitesse) {
             while (voiture.getVitesse() > nouvelleVitesse) {
                 voiture.ralentir();
