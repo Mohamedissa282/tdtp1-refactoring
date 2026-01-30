@@ -1,6 +1,6 @@
 public class Voiture {
     private String modele;
-    private String color;
+    private static String color;
     private int vitesse;
     private static final int PAS_VITESSE = 10;
     private static final int VITESSE_MAX = 120;
