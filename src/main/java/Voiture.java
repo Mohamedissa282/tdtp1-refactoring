@@ -7,7 +7,7 @@ public class Voiture {
     /**
      * color de la voiture
      */
-    private static String color;
+    private String color;
     /**
      * vitesse
      */
@@ -40,6 +40,29 @@ public class Voiture {
         return this.vitesse;
     }
 
+    /**
+     * Règle la vitesse automatiquement
+     * @param nouvelleVitesse
+     */
+    public void atteindreVitesse(int nouvelleVitesse) {
+        if (nouvelleVitesse > VITESSE_MAX) {
+            nouvelleVitesse = VITESSE_MAX;
+        }
+
+        if (nouvelleVitesse < 0) {
+            nouvelleVitesse = 0;
+        }
+
+
+        while (this.vitesse < nouvelleVitesse) {
+            this.accelerer();
+        }
+
+
+        while (this.vitesse > nouvelleVitesse) {
+            this.ralentir();
+        }
+    }
     /**
      * fonctionne accelerer
      */
