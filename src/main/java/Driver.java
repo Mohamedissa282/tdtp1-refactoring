@@ -1,5 +1,5 @@
 
-public class Conducteur {
+public class Driver {
     /**
      * le nom du conducteur
      */
@@ -14,7 +14,7 @@ public class Conducteur {
      * @param name
      * @param years
      */
-    public Conducteur(String name, int years) {
+    public Driver(String name, int years) {
         this.name = name;
         this.years = years;
     }
@@ -23,7 +23,7 @@ public class Conducteur {
      * verification de l'age
      * @return
      */
-    public boolean estAdulte() {
+    public boolean isAdult() {
         return years >= 18;
     }
 
@@ -33,8 +33,8 @@ public class Conducteur {
      *  Affiche un message de refus si le conducteur est mineur
      * @param voiture
      */
-    public void demarrerVoiture(Voiture voiture) {
-        if (estAdulte()) {
+    public void startCar(Car voiture) {
+        if (isAdult()) {
             System.out.println(name + " démarre la voiture.");
         } else {
             System.out.println("Le conducteur n'est pas assez âgé pour conduire.");
@@ -45,7 +45,7 @@ public class Conducteur {
      * Arrête la voiture spécifiée
      * @param voiture
      */
-    public void arreterVoiture(Voiture voiture) {
+    public void reachSpeed(Car voiture) {
         System.out.println(name + " arrête la voiture.");
     }
 
@@ -55,7 +55,7 @@ public class Conducteur {
      * @param voiture
      * @param nouvelleVitesse
      */
-    public void changerVitesse(Voiture voiture, int nouvelleVitesse) {
+    public void changeSpeed(Car voiture, int nouvelleVitesse) {
         System.out.println(name + " change la vitesse de la voiture à " + nouvelleVitesse);
         voiture.atteindreVitesse(nouvelleVitesse);
     }

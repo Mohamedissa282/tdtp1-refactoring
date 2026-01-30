@@ -1,7 +1,7 @@
 import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class VoitureAppTest {
+public class CarAppTest {
 
     @Test
     public void testMain() {
