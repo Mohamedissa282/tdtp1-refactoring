@@ -20,6 +20,10 @@ public class Car {
      * intialisation la vitesse maximum avec 120
      */
     private static final int MAX_SPEED = 120;
+    /**
+     *
+     */
+    private static final int MIN_SPEED = 0;
 
     /**
      * constructeur
@@ -49,8 +53,8 @@ public class Car {
             newSpeed = MAX_SPEED;
         }
 
-        if (newSpeed < 0) {
-            newSpeed = 0;
+        if (newSpeed < MIN_SPEED) {
+            newSpeed = MIN_SPEED;
         }
 
 
@@ -89,7 +93,7 @@ public class Car {
      * fonction relantir
      */
     public void slowDown() {
-        if (speed - PAS_VITESSE >= 0) {
+        if (speed - PAS_VITESSE >= MIN_SPEED) {
             speed -= PAS_VITESSE;
             // afficher détails
             displayDetails();

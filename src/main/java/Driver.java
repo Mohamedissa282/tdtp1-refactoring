@@ -8,6 +8,7 @@ public class Driver {
      * son age
      */
     private int years;
+    private static final int MAJORITY_AGE = 18;
 
     /**
      * constructeur
@@ -24,7 +25,7 @@ public class Driver {
      * @return
      */
     public boolean isAdult() {
-        return years >= 18;
+        return years >= MAJORITY_AGE;
     }
 
     /**
