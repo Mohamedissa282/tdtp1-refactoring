@@ -8,6 +8,9 @@ public class Driver {
      * son age
      */
     private int years;
+    /**
+     * L'âge minumum pour conduire
+     */
     private static final int MAJORITY_AGE = 18;
 
     /**
@@ -43,7 +46,7 @@ public class Driver {
     }
 
     /**
-     * Arrête la voiture spécifiée
+     * Arrête la voiture
      * @param voiture
      */
     public void stopCar(Car voiture) {

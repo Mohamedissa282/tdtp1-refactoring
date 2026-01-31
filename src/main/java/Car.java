@@ -13,15 +13,15 @@ public class Car {
      */
     private int speed;
     /**
-     *
+     * Le pas de vitesse utilisé pour accélérer ou ralentir
      */
-    private static final int PAS_VITESSE = 10;
+    private static final int SPEED_STEP = 10;
     /**
-     * intialisation la vitesse maximum avec 120
+     * La vitesse maximale de la voiture
      */
     private static final int MAX_SPEED = 120;
     /**
-     *
+     * La vitesse minimale de la voiture
      */
     private static final int MIN_SPEED = 0;
 
@@ -37,7 +37,7 @@ public class Car {
     }
 
     /**
-     * on recupere la vitesse
+     * On retourne la vitesse actuelle de la voiture
      * @return
      */
     public int getSpeed() {
@@ -71,8 +71,8 @@ public class Car {
      * fonction accelerer
      */
     public void accelerate() {
-        if (speed + PAS_VITESSE <= MAX_SPEED) {
-            speed += PAS_VITESSE;
+        if (speed + SPEED_STEP <= MAX_SPEED) {
+            speed += SPEED_STEP;
             // afficher détails
             displayDetails();
         } else {
@@ -81,7 +81,7 @@ public class Car {
     }
 
     /**
-     * fonction pour afficher les details
+     * fonction pour afficher les details et on appelle juste dans fonction accelerate et slowDown
      */
     private void displayDetails() {
         System.out.println("Modèle : " + model);
@@ -93,8 +93,8 @@ public class Car {
      * fonction relantir
      */
     public void slowDown() {
-        if (speed - PAS_VITESSE >= MIN_SPEED) {
-            speed -= PAS_VITESSE;
+        if (speed - SPEED_STEP >= MIN_SPEED) {
+            speed -= SPEED_STEP;
             // afficher détails
             displayDetails();
         } else {
