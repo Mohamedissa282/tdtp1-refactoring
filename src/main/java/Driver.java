@@ -35,9 +35,9 @@ public class Driver {
 
      *Tente de démarrer la voiture si le conducteur est adulte
      *  Affiche un message de refus si le conducteur est mineur
-     * @param voiture
+     * @param car
      */
-    public void startCar(Car voiture) {
+    public void startCar(Car car) {
         if (isAdult()) {
             System.out.println(name + " démarre la voiture.");
         } else {
@@ -47,20 +47,22 @@ public class Driver {
 
     /**
      * Arrête la voiture
-     * @param voiture
+     * @param car
      */
-    public void stopCar(Car voiture) {
+    public void stopCar(Car car) {
+
         System.out.println(name + " arrête la voiture.");
+        car.reachSpeed(0);
     }
 
     /**
      * Modifie la vitesse de la voiture pour atteindre une vitesse cible
      * Cette méthode gère l'accélération ou le freinage progressif
-     * @param voiture
+     * @param car
      * @param nouvelleVitesse
      */
-    public void changeSpeed(Car voiture, int nouvelleVitesse) {
+    public void changeSpeed(Car car, int nouvelleVitesse) {
         System.out.println(name + " change la vitesse de la voiture à " + nouvelleVitesse);
-        voiture.reachSpeed(nouvelleVitesse);
+        car.reachSpeed(nouvelleVitesse);
     }
 }
