@@ -90,7 +90,7 @@ public class Car {
     }
 
     /**
-     * fonction relantir
+     * fonction ralentir
      */
     public void slowDown() {
         if (speed - SPEED_STEP >= MIN_SPEED) {

@@ -59,10 +59,10 @@ public class Driver {
      * Modifie la vitesse de la voiture pour atteindre une vitesse cible
      * Cette méthode gère l'accélération ou le freinage progressif
      * @param car
-     * @param nouvelleVitesse
+     * @param newSpeed
      */
-    public void changeSpeed(Car car, int nouvelleVitesse) {
-        System.out.println(name + " change la vitesse de la voiture à " + nouvelleVitesse);
-        car.reachSpeed(nouvelleVitesse);
+    public void changeSpeed(Car car, int newSpeed) {
+        System.out.println(name + " change la vitesse de la voiture à " + newSpeed);
+        car.reachSpeed(newSpeed);
     }
 }

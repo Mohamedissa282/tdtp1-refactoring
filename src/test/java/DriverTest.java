@@ -26,8 +26,9 @@ public class DriverTest {
     @Test
     public void testStopCar() {
         Car car = new Car("Sedan", "Bleu");
+        driver.changeSpeed(car , 50);
         driver.stopCar(car);
-        // How to assert that the arreterVoiture method was called?
+        assertThat(car.getSpeed()).isEqualTo(0);
     }
 
     @Test
